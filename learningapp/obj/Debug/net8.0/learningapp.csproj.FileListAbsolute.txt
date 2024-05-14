@@ -140,3 +140,6 @@ C:\tmp\learningapp\obj\Debug\net8.0\refint\learningapp.dll
 C:\tmp\learningapp\obj\Debug\net8.0\learningapp.pdb
 C:\tmp\learningapp\obj\Debug\net8.0\learningapp.genruntimeconfig.cache
 C:\tmp\learningapp\obj\Debug\net8.0\ref\learningapp.dll
+C:\tmp\learningapp\bin\Debug\net8.0\Microsoft.FeatureManagement.dll
+C:\tmp\learningapp\bin\Debug\net8.0\Microsoft.FeatureManagement.AspNetCore.dll
+C:\tmp\learningapp\obj\Debug\net8.0\learningapp.MvcApplicationPartsAssemblyInfo.cs

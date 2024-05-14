@@ -9,7 +9,8 @@
       "learningapp/1.0.0": {
         "dependencies": {
           "Microsoft.Azure.AppConfiguration.AspNetCore": "7.2.0",
-          "Microsoft.Data.SqlClient": "5.2.0"
+          "Microsoft.Data.SqlClient": "5.2.0",
+          "Microsoft.FeatureManagement.AspNetCore": "3.3.0"
         },
         "runtime": {
           "learningapp.dll": {}
@@ -209,6 +210,18 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.Abstractions/2.1.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/2.1.23": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "2.1.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
@@ -237,6 +250,11 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/2.1.10": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.1"
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
@@ -263,6 +281,30 @@
       "Microsoft.Extensions.Primitives/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "Microsoft.FeatureManagement/3.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "2.1.23",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.10",
+          "Microsoft.Extensions.Logging": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.FeatureManagement.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
+          }
+        }
+      },
+      "Microsoft.FeatureManagement.AspNetCore/3.3.0": {
+        "dependencies": {
+          "Microsoft.FeatureManagement": "3.3.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.FeatureManagement.AspNetCore.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
+          }
         }
       },
       "Microsoft.Identity.Client/4.56.0": {
@@ -574,6 +616,20 @@
       "path": "microsoft.data.sqlclient.sni.runtime/5.2.0",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Caching.Abstractions/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3d5xYNZhqosir31mohbApOE1Iuci/WOfWit+/Cj6ZxS5SR28SbgskgP8M+ZmBZ5Gy7l1DT7fYikgqpC2tQE/nA==",
+      "path": "microsoft.extensions.caching.abstractions/2.1.2",
+      "hashPath": "microsoft.extensions.caching.abstractions.2.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/2.1.23": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-00E3Y0sUISXmSL+BHaesNae1x06g8Bp3b6e9G3rlEn4FePu4TZ14su0PeeD8dgN9WUxbwRWMR6hf6r7QiTVQLQ==",
+      "path": "microsoft.extensions.caching.memory/2.1.23",
+      "hashPath": "microsoft.extensions.caching.memory.2.1.23.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration/6.0.1": {
       "type": "package",
       "serviceable": true,
@@ -594,6 +650,13 @@
       "sha512": "sha512-q5sVAC8Gdfg0zln+YZ8ayXkjvnp/l1mwxq9TTQMp4H/bwNZyQAbqBCFJuERjTBXkYvqS1LQ5+g7Gt03TxOyoeg==",
       "path": "microsoft.extensions.configuration.azureappconfiguration/7.2.0",
       "hashPath": "microsoft.extensions.configuration.azureappconfiguration.7.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/2.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-anSrDPFjcz6oBQjrul2vSHCg/wOZ2gJc1ZNzm03LtkA9S17x8xnkLaT599uuFnl6JSZJgQy4hoHVzt2+bIDc9w==",
+      "path": "microsoft.extensions.configuration.binder/2.1.10",
+      "hashPath": "microsoft.extensions.configuration.binder.2.1.10.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection/6.0.0": {
       "type": "package",
@@ -636,6 +699,20 @@
       "sha512": "sha512-9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "path": "microsoft.extensions.primitives/6.0.0",
       "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.FeatureManagement/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XHOmuBpY6R4sKEsbUI5yY2RAXQ8YAT2JoRs25WN+veWYE0TMMEKKMmeETvhj7plyqgso3Dvw7+GTpy/DJP20Wg==",
+      "path": "microsoft.featuremanagement/3.3.0",
+      "hashPath": "microsoft.featuremanagement.3.3.0.nupkg.sha512"
+    },
+    "Microsoft.FeatureManagement.AspNetCore/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YgpX9CiQwgzARgguAM2VYzC4QgQNramtenk5slhIFpKktxSBPUfzH9UFx9gtPAb6P16MSuF13TwiV3p5CuDj7w==",
+      "path": "microsoft.featuremanagement.aspnetcore/3.3.0",
+      "hashPath": "microsoft.featuremanagement.aspnetcore.3.3.0.nupkg.sha512"
     },
     "Microsoft.Identity.Client/4.56.0": {
       "type": "package",

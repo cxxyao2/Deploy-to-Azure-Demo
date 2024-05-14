@@ -1,8 +1,18 @@
+using Microsoft.FeatureManagement;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Configuration.AddAzureAppConfiguration("Endpoint=https://appli.azconfig.io;Id=0HLw;Secret=0=");
+builder.Configuration.AddAzureAppConfiguration(
+    options =>
+    {
+        options.Connect("");
+        options.UseFeatureFlags();
+    }
+   );
+
+builder.Services.AddFeatureManagement();
 // builder.Configuration
 // .AddJsonFile("appsettings.json")
 //     .AddEnvironmentVariables();
