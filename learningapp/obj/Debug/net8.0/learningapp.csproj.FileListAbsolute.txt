@@ -65,3 +65,6 @@ C:\tmp3\learningapp\obj\Debug\net8.0\refint\learningapp.dll
 C:\tmp3\learningapp\obj\Debug\net8.0\learningapp.pdb
 C:\tmp3\learningapp\obj\Debug\net8.0\learningapp.genruntimeconfig.cache
 C:\tmp3\learningapp\obj\Debug\net8.0\ref\learningapp.dll
+C:\tmpsection3\learning500\learningapp\bin\Debug\net8.0\learningapp.exe
+C:\tmpsection3\learning500\learningapp\bin\Debug\net8.0\learningapp.dll
+C:\tmpsection3\learning500\learningapp\bin\Debug\net8.0\Newtonsoft.Json.dll
