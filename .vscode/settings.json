@@ -1,0 +1,5 @@
+{
+	"appService.preDeployTask": "publish-release",
+	"appService.deploySubpath": "learningapp\\bin\\Release\\net8.0\\publish",
+	"appService.defaultWebAppToDeploy": "undefined/subscriptions/19bedabe-117c-407e-a981-cd07001768b6/resourceGroups/appsvc_windows_centralus_basic/providers/Microsoft.Web/sites/learning500"
+}
